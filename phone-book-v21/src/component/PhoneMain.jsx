@@ -18,7 +18,7 @@ function PhoneMain(props) {
    * ref 형 변수는 current 속성을 자유롭게 변화시킬수 있고
    * 값이 변화가 되어도 화면이 rendering 되지 않는다.
    */
-  const nextid = useRef(phoneBooks && phoneBooks.length && 0);
+  const nextid = useRef(phoneBooks.length && 0);
 
   const insertPhoneBook = (name, number) => {
     /**
